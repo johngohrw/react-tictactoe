@@ -4,7 +4,7 @@ A simple browser-based tic-tac-toe game that depends on a locally-run nodejs ser
 
 ## Steps to run
 
-`cd react-socket-app` - cd to project folder.
+`cd react-tictactoe` - cd to project folder.
 
 `npm run first` - npm script install packages for both server and client
 
