@@ -1,0 +1,92 @@
+
+/* wrapper of entire page. height is 100% viewport height */
+.page-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* main container of the page. flexbox usage */
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container of the tictactoe 'card' container component. flexbox usage */
+.tictactoe__container {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 470px;
+    box-shadow: 0px 0px 25px 0px #cccccc;
+}
+
+/* the grid container of the tictactoe. cssgrid usage,
+   with 3 equal fractions allocated for each row and column */
+.tictactoe__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px #007bff solid;
+    height: 300px;
+    min-height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+/* top status bar. background-color is managed by reactstrap's Alert component */
+.tictactoe__status {
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* clickable buttons in the tictactoe grid. most animation and styling are handled by reactstrap's Button component */
+.tictactoe__button {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    border-radius: 0 !important;
+    font-size: 3rem !important;
+}
+
+/* bottom button groups, most animation and stylings are handled by reactstrap's ButtonGroup component */
+.button-group {
+    margin: 10px;
+}
+
+/* bottom info section. flexbox usage. */
+.tictactoe__infobar {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    min-height: 80px;
+    width: 300px;
+    padding: 5px;
+    margin: 30px;
+    overflow: scroll;
+}
+
+/* bottom info section's items */
+.tictactoe__infobar p {
+    margin: 5px;
+}
+
+/* toast container. most stylings are default from react-toastify library */
+.toast {
+    text-align: center;
+}
+
+.toast__taunt {
+    text-align: center;
+    background-color: #ee5555;
+    color: #ffffff;
+}

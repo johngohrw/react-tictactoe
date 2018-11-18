@@ -1,0 +1,13 @@
+.not-found-page {
+    padding: 50px;
+}
+
+.not-found-page .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.row {
+    margin: 10px 0;
+}
