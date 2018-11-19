@@ -1,5 +1,8 @@
 # react-tictactoe
 
+![alt-text](https://imgur.com/pnFGz02.jpg)
+
+
 A simple browser-based tic-tac-toe game that depends on a locally-run nodejs server. Done for a school assignment in early 2018. 
 
 ## Steps to run
